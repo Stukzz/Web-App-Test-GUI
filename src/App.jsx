@@ -4,8 +4,19 @@ import ToggleButtons from './componets/toggle';
 import searchBar from './componets/searchBar';
 import BasicTable from './componets/table';
 import SearchAppBar from './componets/searchBar';
+import BasicCard from './componets/card';
+import LinearProgressWithLabel from './componets/progressBar'
+
+//hook usetyles = function call make styles
+//returns an object that contains the styles
+// const useStyles = makeStyles(() => ({
+//     container:{
+
+//     }
+// }));
 
 const App = () => {
+
     return(
         <>
             <CssBaseline/ >
@@ -20,7 +31,7 @@ const App = () => {
                         </Grid>
                     </Typography>
                     <Container maxWidth="sm">
-                        <div>
+                        <div >
                             <Grid item xs={7} container spacing = {2} justify="left">
                                 <Container maxWidth="sm" spacing="3">
                                     <Grid wrap="wrap">
@@ -31,13 +42,14 @@ const App = () => {
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis tenetur
                                         </Typography>
                                     </Typography>
+                                    <Grid item xs={6} md={8}>
+                                        <LinearProgressWithLabel />
+                                        <Typography>
+                                            <BasicCard>
+                                            </BasicCard>
+                                        </Typography>
+                                    </Grid>
                                 </Container>
-                                <Container>
-                                    <Typography>
-                                        text
-                                    </Typography>
-                                </Container>
-                                
                             </Grid>
                         </div>
                     </Container>
